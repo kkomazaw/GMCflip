@@ -110,8 +110,8 @@ class ViewController: UIViewController {
         if vT1 <= vT0 || vT2 <= vT1 || AB * BC <= 0 || AB >= 0 || BC >= 0 {
             let titleString = "Please change values."
             let messageString = "t0<t1<t2 and A>B>C"
-            let alert: UIAlertController = UIAlertController(title:titleString,message: messageString,preferredStyle: UIAlertControllerStyle.alert)
-            let okAction: UIAlertAction = UIAlertAction(title: "OK",style: UIAlertActionStyle.default,handler:{(action:UIAlertAction!) -> Void in
+            let alert: UIAlertController = UIAlertController(title:titleString,message: messageString,preferredStyle: UIAlertController.Style.alert)
+            let okAction: UIAlertAction = UIAlertAction(title: "OK",style: UIAlertAction.Style.default,handler:{(action:UIAlertAction!) -> Void in
             })
             alert.addAction(okAction)
             self.view?.window?.rootViewController?.present(alert, animated: true, completion: nil)
@@ -119,8 +119,8 @@ class ViewController: UIViewController {
         else if AB >= BC{
             let titleString = "Please change values."
             let messageString = "Slope AB should be steeper than slope BC."
-            let alert: UIAlertController = UIAlertController(title:titleString,message: messageString,preferredStyle: UIAlertControllerStyle.alert)
-            let okAction: UIAlertAction = UIAlertAction(title: "OK",style: UIAlertActionStyle.default,handler:{(action:UIAlertAction!) -> Void in
+            let alert: UIAlertController = UIAlertController(title:titleString,message: messageString,preferredStyle: UIAlertController.Style.alert)
+            let okAction: UIAlertAction = UIAlertAction(title: "OK",style: UIAlertAction.Style.default,handler:{(action:UIAlertAction!) -> Void in
             })
             alert.addAction(okAction)
             self.view?.window?.rootViewController?.present(alert, animated: true, completion: nil)
@@ -292,8 +292,8 @@ class ViewController: UIViewController {
         else{
             let titleString = "Minus-Button"
             let messageString = "Minus-Button is only available for Value Y."
-            let alert: UIAlertController = UIAlertController(title:titleString,message: messageString,preferredStyle: UIAlertControllerStyle.alert)
-            let okAction: UIAlertAction = UIAlertAction(title: "OK",style: UIAlertActionStyle.default,handler:{(action:UIAlertAction!) -> Void in
+            let alert: UIAlertController = UIAlertController(title:titleString,message: messageString,preferredStyle: UIAlertController.Style.alert)
+            let okAction: UIAlertAction = UIAlertAction(title: "OK",style: UIAlertAction.Style.default,handler:{(action:UIAlertAction!) -> Void in
             })
             alert.addAction(okAction)
             self.view?.window?.rootViewController?.present(alert, animated: true, completion: nil)
